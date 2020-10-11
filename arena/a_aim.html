@@ -3,10 +3,23 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <TItle>ARENA AIM</TItle>
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
 }
 
 .navbar {
@@ -38,7 +51,7 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 20px;  
   border: none;
   outline: none;
   color: white;
@@ -77,14 +90,107 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@media (max-width: 568px){.pimg1, .pimg2, .pimg3, .pimg4 {
+    background-attachment: scroll;
+}
+}
+.pimg1 {
+    background-image: url(https://cdn.dribbble.com/users/652714/screenshots/8354218/media/00484f3bdbb8049a52a6a87597361ec9.jpg);
+    min-height: 100%;
+}
+
+
+div {
+    display: block;
+}
+.pimg1, .pimg2, .pimg3,.pimg4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+section {
+    display: block;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.pimg2 {
+    background-image: url(https://i.cbc.ca/1.5057671.1552619701!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/the-gaming-stadium.jpg);
+    min-height: 60%;
+}
+.ptext .border.trans {
+    background-color: transparent;
+}
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+.pimg3 {
+    background-image: url(https://www.dafont.com/forum/attach/orig/7/4/747658.jpg);
+    min-height: 60%;
+}
+.pimg4 {
+    background-image: url(https://i.pinimg.com/originals/64/78/47/647847b75e3e4fa1106abc217086db41.png);
+    min-height: 500px;
+}
+
+.newborder{
+  background-color:white;
+    color: #fff;
+    padding: 20px;
+}
+
 </style>
 </head>
 <body>
 
   <div class="navbar">
     <a href="../index.html"><img src="https://2.bp.blogspot.com/-58E4PsQr77A/Wv15pvuphDI/AAAAAAAA8B4/gNca9l67bSQUn__b3pXpPYzKWWLQmlrtQCLcBGAs/s1600/Ajeenkya%2BLogo.png" width="75px" height="30px"></a>
-    <div class="news" >
-      <a href="#">news</a>
+    <div class="dropdown" >
+      <div class="dropbtn">
+        <a href="#">news</a>
+      </div>
     </div>
        
     
@@ -165,10 +271,73 @@ body {
         <a href="../greentech\gt_chat.html">Chat</a>
       </div>
     </div> 
-    
   </div>
 
-<h1>ARENA AIM</h1>
+  
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        WELCOME TO ARENA GAMING !
+      </span>
+    </div>
+  </div>
+  
+  <section class="section section-light">
+     <h2>Section One</h2>
+     <p>
+     SOME STUFF ABOUT OUR ARENA GAMING CRNTRE
+    </p>
+  </section>
+  
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        PLAY AND WIN EXCLUSIVE GIFTS AND VOUCHERS!
+      </span>
+    </div>
+  </div>
+  
+  <section class="section section-dark">
+    <h2>Section Two</h2>
+    <p>
+       SOME STUFF ABOUT OUR ARENA GAMING CRNTRE
+     </p>
+  </section>
+  
+  <div class="pimg3">
+     <div class="ptext">
+      <span class="border trans">
+        Image Three Text
+       </span>
+    </div>
+  </div>
+  
+  <section class="section section-dark">
+    <h2>Section Three</h2>
+    <p>
+      SOME STUFF ABOUT OUR ARENA GAMING CRNTRE
+    </p>
+  </section>
+  
+  <div class="pimg4">
+     <div class="ptext">
+       
+     </div>
+  </div>
+
+   <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>join now</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
 
 </body>
 </html>
