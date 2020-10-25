@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport", content="width=device-width", initial-scale="1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
@@ -87,6 +87,7 @@ img {vertical-align: middle;}
 .navbar {
   overflow: hidden;
   background-color: #333;
+  width: 100%;
 }
 
 .navbar a {
@@ -110,10 +111,12 @@ img {vertical-align: middle;}
 .dropdown {
   float: right;
   overflow: hidden;
+  
+  
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+    
   border: none;
   outline: none;
   color: white;
@@ -121,6 +124,7 @@ img {vertical-align: middle;}
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -201,21 +205,28 @@ button:hover, a:hover {
   
 }
 
-
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 
 </style>
 </head>
 <body>
 
 <div class="navbar">
-  <a href="index.html"><img src="https://2.bp.blogspot.com/-58E4PsQr77A/Wv15pvuphDI/AAAAAAAA8B4/gNca9l67bSQUn__b3pXpPYzKWWLQmlrtQCLcBGAs/s1600/Ajeenkya%2BLogo.png" width="75px" height="30px"></a>
-  <div class="news" >
+  <div width:12%>
+  <a href="index.html">Home</a>
+  </div>
+  <div class="news", width:8% >
     <a href="#">news</a>
   </div>
      
   
    <div class="dropdown">
-    <button class="dropbtn">ARENA
+    <button class="dropbtn", width:10%>ARENA
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -228,7 +239,7 @@ button:hover, a:hover {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">BIOTECH
+    <button class="dropbtn", width:10%>BIOTECH
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -241,7 +252,7 @@ button:hover, a:hover {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">STACK
+    <button class="dropbtn", width:12%>STACK
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -254,7 +265,7 @@ button:hover, a:hover {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">Tracking
+    <button class="dropbtn", width:13%>Tracking
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -267,7 +278,7 @@ button:hover, a:hover {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">Cyber security
+    <button class="dropbtn", width:17%>Cyber security
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -280,7 +291,7 @@ button:hover, a:hover {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">Greentech
+    <button class="dropbtn", width:12%>Greentech
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">

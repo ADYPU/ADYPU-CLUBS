@@ -3,52 +3,53 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+body {margin:0;font-family:Arial}
 
-.navbar {
+.topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
 }
 
-.navbar a {
-  float: left ;
-  font-size: 16px;
-  color: white;
+.topnav a {
+  float: left;
+  display: block;
+  color: #fa0000;
   text-align: center;
-  padding: 15px 15px;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
-.navbar .news {
-  float: right ;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  
-  text-decoration: none;
-  
+
+.active {
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  font-family: 'Kaushan Script', cursive;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.topnav .icon {
+  display: none;
 }
 
 .dropdown {
   float: right;
   overflow: hidden;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 17px;    
   border: none;
   outline: none;
-  color: white;
+  color: rgb(0, 12, 182);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
 }
 
 .dropdown-content {
@@ -69,30 +70,59 @@ body {
   text-align: left;
 }
 
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
 .dropdown-content a:hover {
   background-color: #ddd;
+  color: black;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
 </style>
 </head>
 <body>
-<header>
-<div class="navbar">
-   <div id="logo">
-        <a href="index.html">
-        <img src="https://2.bp.blogspot.com/-58E4PsQr77A/Wv15pvuphDI/AAAAAAAA8B4/gNca9l67bSQUn__b3pXpPYzKWWLQmlrtQCLcBGAs/s1600/Ajeenkya%2BLogo.png" width="75px" height="30px"></a>
-   </div>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
   
-   <div class="news" >
-      <a href="#">news</a>
-   </div>
-     
-  
-   <div class="dropdown">
-    <button class="dropbtn">ARENA
+  <div class="dropdown">
+    <button class="dropbtn", width:10%>ARENA
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -105,7 +135,7 @@ body {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">BIOTECH
+    <button class="dropbtn", width:10%>BIOTECH
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -118,7 +148,7 @@ body {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">STACK
+    <button class="dropbtn", width:12%>STACK
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -131,7 +161,7 @@ body {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">Tracking
+    <button class="dropbtn", width:13%>Tracking
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -144,7 +174,7 @@ body {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">Cyber security
+    <button class="dropbtn", width:17%>Cyber security
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -157,7 +187,7 @@ body {
   </div> 
 
   <div class="dropdown">
-    <button class="dropbtn">Greentech
+    <button class="dropbtn", width:12%>Greentech
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -168,9 +198,23 @@ body {
       <a href="greentech\gt_chat.html">Chat</a>
     </div>
   </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-</header>
-<H1>WELCOME TO OUR CLUBS!</H1>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
 
 </body>
 </html>
