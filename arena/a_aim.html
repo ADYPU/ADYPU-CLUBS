@@ -114,21 +114,15 @@ p {
 </head>
 <body>
 
-  <div class="navbar">
-    <a href="../index.html"><img src="https://2.bp.blogspot.com/-58E4PsQr77A/Wv15pvuphDI/AAAAAAAA8B4/gNca9l67bSQUn__b3pXpPYzKWWLQmlrtQCLcBGAs/s1600/Ajeenkya%2BLogo.png" width="75px" height="30px"></a>
-    <div class="dropdown" >
-      <div class="dropbtn">
-        <a href="#">news</a>
-      </div>
-    </div>
-       
+  <div class="topnav" id="myTopnav">
+    <a href="../index.html" class="active">Home</a>
     
-     <div class="dropdown">
-      <button class="dropbtn">ARENA
+    <div class="dropdown">
+      <button class="dropbtn", width:10%>ARENA
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="../arena/a_aim.html">AIM</a>
+        <a href="../arena\a_aim.html">AIM</a>
         <a href="../arena\a_activities.html">Activity</a>
         <a href="../arena\a_achievements.html">Achievements</a>
         <a href="../arena\a_gallery.html">Gallery</a>
@@ -137,20 +131,20 @@ p {
     </div> 
   
     <div class="dropdown">
-      <button class="dropbtn">BIOTECH
+      <button class="dropbtn", width:10%>BIOTECH
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a href="../biotech\b_aim.html">AIM</a>
-        <a href="../biotech\b_activities.html">Activity</a>
-        <a href="../biotech\b_achievements.html">Achievements</a>
-        <a href="../biotech\b_gallery.html">Gallery</a>
-        <a href="../biotech\b_chat.html">Chat</a>
+        <a href="../biotech/b_aim.html">AIM</a>
+        <a href="../biotech/b_activities.html">Activity</a>
+        <a href="../biotech/b_achievements.html">Achievements</a>
+        <a href="../biotech/b_gallery.html">Gallery</a>
+        <a href="../biotech/b_chat.html">Chat</a>
       </div>
     </div> 
   
     <div class="dropdown">
-      <button class="dropbtn">STACK
+      <button class="dropbtn", width:12%>STACK
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
@@ -163,7 +157,7 @@ p {
     </div> 
   
     <div class="dropdown">
-      <button class="dropbtn">Tracking
+      <button class="dropbtn", width:13%>Tracking
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
@@ -176,7 +170,7 @@ p {
     </div> 
   
     <div class="dropdown">
-      <button class="dropbtn">Cyber security
+      <button class="dropbtn", width:17%>Cyber security
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
@@ -189,19 +183,33 @@ p {
     </div> 
   
     <div class="dropdown">
-      <button class="dropbtn">Greentech
+      <button class="dropbtn", width:12%>Greentech
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
         <a href="../greentech\gt_aim.html">AIM</a>
         <a href="../greentech\gt_activities.html">Activity</a>
         <a href="../greentech\gt_achievements.html">Achievements</a>
-        <a href="../greentech\gt_gallery.html">Gallery</a>
+        <a href="../greentech/gt_gallery.html">Gallery</a>
         <a href="../greentech\gt_chat.html">Chat</a>
       </div>
     </div> 
+    <div></div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
-
+  
+  
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
   
   <div class="pimg1">
     <div class="ptext">
@@ -256,7 +264,7 @@ p {
 
    <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>join now</a>
+  <a href="../index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>join now</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
